@@ -1,4 +1,3 @@
-'use client'
 import { features } from '@/constants/features'
 
 export function Features() {

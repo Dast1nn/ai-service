@@ -2,12 +2,13 @@ import Image from 'next/image'
 
 export function Hero() {
 	return (
-		<section className='relative min-h-screen overflow-hidden  text-white'>
+		<section className='relative min-h-screen overflow-hidden text-white'>
+			{/* CONTENT */}
 			<div className='relative z-10 mx-auto max-w-5xl pt-20 text-center'>
 				<h1
 					className='mb-6 text-6xl font-normal tracking-tight
-					bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_38%,#5C24FF_75%,#D94FD5_100%)]
-					bg-clip-text text-transparent'
+          bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_38%,#5C24FF_75%,#D94FD5_100%)]
+          bg-clip-text text-transparent'
 				>
 					THE BEST WEBSITE EVER
 				</h1>
@@ -27,21 +28,25 @@ export function Hero() {
 						</button>
 					</div>
 
-					<button className='h-14 rounded-full border border-white px-8  '>
+					<button className='h-14 rounded-full border border-white px-8'>
 						Read more
 					</button>
 				</div>
 			</div>
 
-			<div className='pointer-events-none absolute  -bottom-20 left-[50.8%] w-350 max-w-none -translate-x-1/2'>
+			{/* BACKGROUND IMAGE */}
+			<div
+				className='pointer-events-none absolute -bottom-20 left-1/2 
+                      h-[700px] w-[1400px] -translate-x-1/2 '
+			>
 				<Image
 					src='/back.webp'
 					alt='Hero visual'
-					width={1400}
-					height={800}
-					className='object-contain'
+					fill
 					priority
+					quality={70}
 					sizes='(max-width: 768px) 100vw, 1400px'
+					className='object-cover'
 				/>
 			</div>
 		</section>

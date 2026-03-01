@@ -1,16 +1,15 @@
 import { Features } from '@/components/Features'
-import { Footer } from '@/components/Footer'
 import { Hero } from '@/components/Hero'
-import { Header } from '@/components/layout/Header'
 import { Testimonials } from '@/components/Testimonials'
+import { Suspense } from 'react'
 export default function Home() {
 	return (
-		<main>
-			<Header />
-			<Hero />
+		<div>
+			<Suspense fallback={<div>Loading...</div>}>
+				<Hero />
+			</Suspense>
 			<Features />
 			<Testimonials />
-			<Footer />
-		</main>
+		</div>
 	)
 }

@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import { SocialNetworks } from '../SocialNetworks'
-import { Container } from './Container'
 
 export function Header() {
 	return (
 		<header>
-			<Container className='flex items-center justify-between mt-6'>
+			<div className='flex items-center justify-between mt-6 mx-auto max-w-7xl'>
 				<Link
 					href='/'
 					className='text-2xl font-black tracking-wide bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_38%,#5C24FF_75%,#D94FD5_100%)]
@@ -37,7 +36,7 @@ export function Header() {
 					<SocialNetworks />
 				</div>
 				<button className='md:hidden'>☰</button>
-			</Container>
+			</div>
 		</header>
 	)
 }
