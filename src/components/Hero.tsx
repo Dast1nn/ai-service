@@ -3,7 +3,6 @@ import Image from 'next/image'
 export function Hero() {
 	return (
 		<section className='relative min-h-screen overflow-hidden text-white'>
-			{/* CONTENT */}
 			<div className='relative z-10 mx-auto max-w-5xl pt-20 text-center'>
 				<h1
 					className='mb-6 text-6xl font-normal tracking-tight
@@ -33,8 +32,6 @@ export function Hero() {
 					</button>
 				</div>
 			</div>
-
-			{/* BACKGROUND IMAGE */}
 			<div
 				className='pointer-events-none absolute -bottom-20 left-1/2 
                       h-[700px] w-[1400px] -translate-x-1/2 '
@@ -45,8 +42,12 @@ export function Hero() {
 					fill
 					priority
 					quality={70}
-					sizes='(max-width: 768px) 100vw, 1400px'
+					sizes='
+			(max-width: 768px) 100vw,
+			(max-width: 1200px) 100vw,
+			1400px'
 					className='object-cover'
+					fetchPriority='high'
 				/>
 			</div>
 		</section>
