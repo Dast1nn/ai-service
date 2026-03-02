@@ -1,6 +1,6 @@
 import { reviews } from '@/constants/reviews'
-import { User } from 'lucide-react'
 import Script from 'next/script'
+import { FaUser } from 'react-icons/fa'
 export function Testimonials() {
 	const jsonLd = {
 		'@context': 'https://schema.org',
@@ -38,7 +38,7 @@ export function Testimonials() {
 						>
 							<p className='mb-6 text-gray-300'>“{r.review}”</p>
 							<div className='flex items-center gap-4 mt-4'>
-								<User className=' text-purple-400' size={40} />
+								<FaUser className=' text-purple-400' size={30} />
 								<div>
 									<p className='font-medium'>{r.name}</p>
 									<p className='text-sm text-gray-500'>{r.role}</p>

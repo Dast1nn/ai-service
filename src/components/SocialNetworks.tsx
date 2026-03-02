@@ -1,5 +1,5 @@
-import { Github, Instagram, Linkedin, Twitter } from 'lucide-react'
 import Link from 'next/link'
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 export function SocialNetworks() {
 	return (
 		<>
@@ -9,7 +9,7 @@ export function SocialNetworks() {
 				aria-label='GitHub'
 				className='hover:text-purple-400 transition'
 			>
-				<Github size={20} />
+				<FaGithub size={20} />
 			</Link>
 			<Link
 				href='https://linkedin.com'
@@ -17,7 +17,7 @@ export function SocialNetworks() {
 				aria-label='LinkedIn'
 				className='hover:text-purple-400 transition'
 			>
-				<Linkedin size={20} />
+				<FaLinkedin size={20} />
 			</Link>
 
 			<Link
@@ -26,7 +26,7 @@ export function SocialNetworks() {
 				aria-label='Instagram'
 				className='hover:text-purple-400 transition'
 			>
-				<Instagram size={20} />
+				<FaInstagram size={20} />
 			</Link>
 			<Link
 				href='https://twitter.com'
@@ -34,7 +34,7 @@ export function SocialNetworks() {
 				aria-label='Twitter'
 				className='hover:text-purple-400 transition'
 			>
-				<Twitter size={20} />
+				<FaTwitter size={20} />
 			</Link>
 		</>
 	)
