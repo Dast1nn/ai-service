@@ -21,7 +21,9 @@ export function Features() {
 							hover:-translate-y-2	
 							hover:shadow-2xl hover:shadow-purple-500/10'
 							>
-								<Icon className='mb-4 h-10 w-10 text-purple-400' />
+								<div className='w-10 h-10'>
+									<Icon className='w-full h-full' />
+								</div>
 
 								<h3 className='mb-3 text-xl font-medium'>{feature.title}</h3>
 
